@@ -23,13 +23,11 @@
           <i class="fas fa-bars"></i>
         </button>
 
-        <button class="close-burger hidden" id="close-burger">X</button>
-
         <ul class="nav-ul" id="nav-ul">
-          <li><a href="#sectionAbout">About</a></li>
-          <li><a href="#sectionSkills">Skills</a></li>
-          <li><a href="#sectionProjects">Projects</a></li>
-          <li><a href="#sectionContact">Hire Me</a></li>
+          <li><a class="nav-link" href="#sectionAbout">About</a></li>
+          <li><a class="nav-link" href="#sectionSkills">Skills</a></li>
+          <li><a class="nav-link" href="#sectionProjects">Projects</a></li>
+          <li><a class="nav-link" href="#sectionContact">Hire Me</a></li>
         </ul>
       </nav>
     </header>
@@ -38,37 +36,18 @@
       <section class="sectionA">
         <div class="Introduction">
           <div class="intro">
+        
             <span>i'm</span> a Front-end <span>developer</span>
           </div>
           <div class="intro2">
             i enjoy creating high performance and interactive websites
           </div>
         </div>
+
+        <div class="buttonContainer">
+          <button class="btn btn-primary">Get in Touch</button>
+        </div>
       </section>
-
-      <div class="icons-container">
-        <div class="twitter-container">
-          <a href="https://twitter.com/kundaisitholee">
-            <img src="/logos: images /twitter-xxl.png" alt="Twitter"
-          /></a>
-        </div>
-
-        <div class="linkedin-container">
-          <a href="https://www.linkedin.com/in/kundai-sithole-9579a8221/">
-            <img src="/logos: images /linkedin-xxl.png" alt="Linkedin" />
-          </a>
-        </div>
-
-        <div class="linkedin-container">
-          <a href="https://www.linkedin.com/in/kundai-sithole-9579a8221/">
-            <img src="/logos: images /linkedin-xxl.png" alt="Linkedin" />
-          </a>
-        </div>
-      </div>
-
-      <div class="buttonContainer">
-        <button class="btn btn-primary">Get in Touch</button>
-      </div>
 
       <section class="sectionB" id="sectionAbout">
         <div class="About">
@@ -80,130 +59,154 @@
             industry is rapidly changing everyday and i am a developer who is
             more than willing to do whatever it takes to learn new technologies.
           </p>
+          <div class="background-skew"></div>
           <button>skills</button>
         </div>
       </section>
 
       <section class="sectionC" id="sectionSkills">
-        <div class="tech-stack">
-          <h1>Tech stack</h1>
+        <h1>Skills</h1>
+        <div class="skillsContainer">
+          <div>
+            <h2 class="skills-subtitle">Tech-stack</h2>
 
-          <div class="technologies">
-            <div class="tech">
+            <div class="skill">
               <div class="tech-Img-Container">
-                <img src="/logos: images /html.png" alt="html" />
+                <img class= "skill-img" src="/logos: images /html.png" alt="html" />
               </div>
-              <p>html</p>
+              <p class="skill-name">html</p>
             </div>
 
-            <div class="tech">
+            <div class="skill">
               <div class="tech-Img-Container">
-                <img src="/logos: images /css-3.png" alt="html" />
+                <img class= "skill-img" src="/logos: images /css-3.png" alt="html" />
               </div>
-              <p>css</p>
-            </div>
-          </div>
-
-          <div class="technologies">
-            <div class="tech">
-              <div class="tech-Img-Container">
-                <img src="/logos: images /pngwing.com.png" alt="html" />
-              </div>
-              <p>javascript</p>
+              <p class="skill-name">css</p>
             </div>
 
-            <div class="tech">
+
+            <div class="skill">
               <div class="tech-Img-Container">
-                <img src="/logos: images /react.png" alt="html" />
+                <img class= "skill-img" src="/logos: images /pngwing.com.png" alt="html" />
               </div>
-              <p>React.js</p>
+              <p class="skill-name">javascript</p>
             </div>
-          </div>
+
+            <div class="skill">
+              <div class="tech-Img-Container">
+                <img class= "skill-img" src="/logos: images /react.png" alt="html" />
+              </div>
+              <p class="skill-name">React.js</p>
+            </div>
         </div>
 
         <div class="tools">
-          <h1>Tools</h1>
-          <p>visual studio code</p>
-          <p>figma</p>
-          <p>github</p>
-          <p>firefox</p>
+          <h1 class="tool-subtitle">Tools</h1>
+
+          <div class="tool">
+            <div class="tech-Img-Container">
+              <img class= "skill-img" src="/logos: images /react.png" alt="html" />
+            </div>
+            <p class="skill-name">visual studio code</p>
+          </div>
+
+          <div class="tool">
+            <div class="tech-Img-Container">
+              <img class= "skill-img" src="/logos: images /react.png" alt="html" />
+            </div>
+            <p class="tool-name">figma</p>
+          </div>
+
+          <div class="tool">
+            <div class="tech-Img-Container">
+              <img class= "skill-img" src="/logos: images /react.png" alt="html" />
+            </div>
+            <p class="tool-name">Git</p>
+          </div>
+
+          <div class="tool">
+            <div class="tech-Img-Container">
+              <img class= "skill-img" src="/logos: images /react.png" alt="html" />
+            </div>
+            <p class="tool-name">firefox</p>
+          </div>
+         
         </div>
       </section>
 
-      <section class="sectionD">
-        <div class="projects">
+      <section class="sectionD" id="sectionProjects">
+        <h1 class="projectsTitle">My Projects</h1>
+
+        <div class="projectsContainer">
+
+        <div>
           <div class="project">
-            <h1>Project 01</h1>
-            <p>
+            <h3 class="projectName">Project Name</h3>
+            <p class="projectDescription">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               iusto sed, tempore, repellat doloremque repellendus ratione facere
-              libero nihil ex nulla. Voluptatibus molestias incidunt accusantium
-              delectus et at amet placeat! Corporis nam doloremque veritatis
-              adipisci fugiat!
+              libero nihil ex nulla. 
             </p>
-            <div class="button-container">
-              <button class="live-site">live site url</button>
-              <button class="code">code</button>
+            <div class="projectLinksContainer">
+              <a class="projectLink" href="http://">live site url</a>
+              <a class="projectLink" href="http://">code</a>
             </div>
 
             <div class="project-img">
               <img src="" alt="" />
             </div>
-          </div>
+            </div>
 
           <div class="project">
-            <h1>Project 02</h1>
-            <p>
+            <h3 class="projectName">Project Name</h3>
+            <p class="projectDescription">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               iusto sed, tempore, repellat doloremque repellendus ratione facere
-              libero nihil ex nulla. Voluptatibus molestias incidunt accusantium
-              delectus et at amet placeat! Corporis nam doloremque veritatis
-              adipisci fugiat!
+              libero nihil ex nulla.
             </p>
-            <div class="button-container">
-              <button class="live-site">live site url</button>
-              <button class="code">code</button>
+            <div class="projectLinksContainer">
+              <a class="projectLink" href="http://">live site url</a>
+             <a class="projectLink" href="http://">code</a>
             </div>
             <div class="project-img">
               <img src="" alt="" />
             </div>
           </div>
+        </div>
 
+        <div>
           <div class="project">
-            <h1>Project 03</h1>
-            <p>
+            <h3 class="projectName">Project Name</h3>
+            <p class="projectDescription">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               iusto sed, tempore, repellat doloremque repellendus ratione facere
-              libero nihil ex nulla. Voluptatibus molestias incidunt accusantium
-              delectus et at amet placeat! Corporis nam doloremque veritatis
-              adipisci fugiat!
+              libero nihil ex nulla.
             </p>
-            <div class="button-container">
-              <button class="live-site">live site url</button>
-              <button class="code">code</button>
+            <div class="projectLinksContainer">
+              <a class="projectLink" href="http://">live site url</a>
+              <a class="projectLink" href="http://">code</a>
             </div>
             <div class="project-img">
               <img src="" alt="" />
             </div>
           </div>
-
+          
           <div class="project">
-            <h1>Project 04</h1>
-            <p>
+            <h3 class="projectName">Project Name</h3>
+            <p class="projectDescription">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               iusto sed, tempore, repellat doloremque repellendus ratione facere
-              libero nihil ex nulla. Voluptatibus molestias incidunt accusantium
-              delectus et at amet placeat! Corporis nam doloremque veritatis
-              adipisci
+              libero nihil ex nulla. 
             </p>
-            <div class="button-container">
-              <button class="live-site">live site url</button>
-              <button class="code">code</button>
+            <div class="projectLinksContainer">
+              <a class="projectLink" href="http://">live site url</a>
+              <a class="projectLink" href="http://">code</a>
             </div>
             <div class="project-img">
               <img src="" alt="" />
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -219,6 +222,28 @@
         </form>
       </div>
     </div>
+
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
   </body>
 </html>
+<!-- 
+<div class="icons-container">
+  <div class="twitter-container">
+    <a href="https://twitter.com/kundaisitholee">
+      <img src="/logos: images /twitter-xxl.png" alt="Twitter"
+    /></a>
+  </div>
+
+  <div class="linkedin-container">
+    <a href="https://www.linkedin.com/in/kundai-sithole-9579a8221/">
+      <img src="/logos: images /linkedin-xxl.png" alt="Linkedin" />
+    </a>
+  </div>
+
+  <div class="linkedin-container">
+    <a href="https://www.linkedin.com/in/kundai-sithole-9579a8221/">
+      <img src="/logos: images /linkedin-xxl.png" alt="Linkedin" />
+    </a>
+  </div>
+</div> -->
