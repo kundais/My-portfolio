@@ -1,19 +1,23 @@
 const hamburger = document.getElementById("hamburger");
-const navUL = document.getElementById("nav-ul");
-const navbar = document.getElementById("navbar");
-const close = document.getElementById("close-burger");
+const navUl = document.getElementById("nav-ul");
+const overLay = document.querySelector(".overlay");
 
-const openBurger = function () {
-  hamburger.classList.add("hidden");
-  close.classList.add("show");
-  navUL.classList.toggle("show");
-};
+hamburger.addEventListener("click", function () {
+  navUl.classList.toggle("show");
+  overLay.classList.toggle("hidden");
+});
 
-const closeBurger = function () {
-  hamburger.classList.remove("hidden");
-  close.classList.remove("show");
-  navUL.classList.toggle("show");
-};
+overLay.addEventListener("click", function () {
+  navUl.classList.remove("show");
+  overLay.classList.add("hidden");
+});
+// implementing smooth scrolling
 
-hamburger.addEventListener("click", openBurger);
-close.addEventListener("click", closeBurger);
+navUl.addEventListener("click", function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    e.preventDefault();
+
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
