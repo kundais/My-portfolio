@@ -56,10 +56,10 @@ nav {
   color: white;
 }
 
-.nav-ul a:hover {
+/* .nav-ul a:hover {
   border: none;
   border-bottom: 2px solid #43d6b2;
-}
+} */
 
 .logo a {
   text-decoration: none;
@@ -360,6 +360,67 @@ nav {
 .projectLink {
   color: #43d6b2;
   text-decoration: none;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.contact-title {
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  color: #586271;
+  margin-bottom: 1rem;
+}
+
+.submitContact {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+  background-color: #43d6b2;
+  border: none;
+  color: #fff;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.twitter-container,
+.linkedin-container {
+  width: 20px;
+  height: 20px;
+  background-color: #274a44;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.twitter,
+.linkedin,
+.github {
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  background: white;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hidden {
