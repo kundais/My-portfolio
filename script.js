@@ -21,3 +21,11 @@ navUl.addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+const buttonGetinTouch = document.querySelector(".btn-primary");
+const sectionContact = document.querySelector(".contact");
+
+buttonGetinTouch.addEventListener("click", function (e) {
+  e.preventDefault();
+  sectionContact.scrollIntoView({ behavior: "smooth" });
+});
