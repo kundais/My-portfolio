@@ -205,7 +205,7 @@ nav {
   background-color: #73c580;
   z-index: -1;
   opacity: 0.3;
-  top: 80%;
+  top: -100px;
   right: 30px;
 }
 
@@ -213,7 +213,7 @@ nav {
 
 .sectionB {
   margin-top: -5rem;
-  margin-bottom: 30rem;
+  margin-bottom: 3rem;
   position: relative;
   border-radius: 50px;
   padding: 2rem;
@@ -224,13 +224,19 @@ nav {
 .background-skew {
   position: absolute;
   transform: skewY(-3deg);
-  background-color: red;
+  background-color: #43d6b2;
   z-index: -1;
   top: 0;
   left: 0;
   min-height: 500px;
   width: 100%;
 }
+
+/* 
+.downArrow {
+  height: 50px;
+  background-color: white;
+} */
 
 .About span {
   border-bottom: 2px solid white;
@@ -429,4 +435,32 @@ footer {
 
 .show {
   display: block;
+}
+
+/* media queries */
+
+@media screen and (min-width: 950px) {
+  .sectionA {
+    height: 100vh;
+    text-align: left;
+    margin-top: 200px;
+  }
+
+  .intro {
+    font-size: 55px;
+  }
+
+  .btn {
+    margin-top: 6rem;
+    font-size: 1rem;
+  }
+
+  .icons-container {
+    position: absolute;
+    top: 10%;
+  }
+
+  .projectsContainer {
+    display: grid;
+  }
 }
